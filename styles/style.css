@@ -9,27 +9,53 @@ body{
     height: 750px;
     
 }
-.banner-width{
-    width: 50%;
-}
 .top-bar-title{
     font-size: 80px;
     margin-left: 100px;
     margin-top: 150px;
     color: #FFFFFF;
 }
-.live-link{
+.banner-width{
+    width: 50%;
+}
+
+.banner-width img {
+    width: 90%;
+    margin-top: 100px;
+ }
+ 
+    /* hover style start */
+.live-button{
     text-decoration: none;
     font-size: 26px;
-    color: #FFFFFF;
+    color: white;
     margin-left: 100px;
-    background-color: #E02C6D;
-    padding: 5px;   
+    padding: 5px;  
+    border: 3px solid #0bfdf1;
+    border-radius: 3px;
+    position: relative;
+    transition: ease-out 0.3s;
+    z-index: 1;
 }
- .banner-width img {
-   width: 90%;
-   margin-top: 100px;
+.live-button::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color:#0bfdf1;
 }
+.live-button:hover::before{
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+    /* hover style end  */
 
 /* players name about details  */
 .player-photo img {
@@ -44,7 +70,7 @@ body{
     height: 525px;
     text-align: justify;
     border: 1px solid white;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0);
     padding-left: 20px;
     padding-top: 30px;
     padding-right: 10px;
@@ -61,5 +87,4 @@ body{
     height: 474px;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
-    
 }
