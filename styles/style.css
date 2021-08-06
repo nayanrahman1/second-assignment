@@ -88,3 +88,20 @@ body{
     grid-row-gap: 20px;
     grid-column-gap: 20px;
 }
+  /* footer part  */
+footer{
+    margin-top: 125%;
+}
+.last-part img{
+    width: 450px;
+    margin-left: 500px;
+}
+.social-media{
+    margin-left: 700px;
+    font-size: 25px;
+    
+}
+.social-media .color{
+    color:rgba(0, 0, 0, 0.411);
+    width: 40px;
+}
